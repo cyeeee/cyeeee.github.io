@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Chroma Flow</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="icon" href="../images/logo.png">
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="../index.html">Chenyi Wang</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="../index.html">Home</a></li>
+								<li><a href="../projects.html">Projects</a></li>
+								<li><a href="../about.html">About</a></li>
+							</ul>
+							<a href="https://www.linkedin.com/in/chenyiw/" class="icon brands fa-linkedin-in"></a>&emsp;
+							<a href="https://github.com/cyeeee" class="icon brands fa-github"></a>&emsp;
+							<a href="https://www.instagram.com/yeeee_cyi/" class="icon brands fa-instagram"></a>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Chroma Flow</h2>
+								<p>Affective Interactive Installation<br><i>2024.04 - 2024.06</i></p>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<div class="box alt">
+										<div class="row gtr-uniform">
+											<div class="col-12"><span class="video fit">
+												<video controls>
+													<source src="../videos/chroma-flow_1.mp4" type="video/mp4">
+												</video>
+											</span></div>
+										</div>
+									</div>
+
+									<p>Flowing Conversations in Color allows individuals to seamlessly join ongoing discussions, picking up where others left off, while visually perceiving the emotional context of the conversation. By employing emotion detection algorithms, we aim to create an empathetic environment that fosters deeper connections and understanding among participants.</p>
+									
+									<div class="box alt">
+										<div class="row gtr-uniform">
+											<div class="col-6"><span class="image fit"><img src="../images/chroma-flow_1.png" alt="" /></span></div>
+											<div class="col-6"><span class="image fit"><img src="../images/chroma-flow_3.png" alt="" /></span></div>
+											<div class="col-6"><span class="image fit"><img src="../images/chroma-flow_2.png" alt="" /></span></div>
+											<div class="col-6"><span class="image fit"><img src="../images/chroma-flow_4.png" alt="" /></span></div>
+										</div>
+									</div>
+
+									<p>The model we used in our implementation is <a href="https://huggingface.co/SamLowe/roberta-base-go_emotions"><i>roberta-base-go_emotions</i></a> on huggingface, 
+										which is a text classification model and has 28 different possibilities, we assigned each emotion different colors by referencing <a href="https://www.interaction-design.org/literature/topics/color-symbolism"><i>color symbolisms</i></a> and 
+										<a href="https://www.color-meanings.com/"><i>color meanings</i></a>.</p>
+									<p>The color mapping is initially implemented by changing the background color based on the emotion with the highest score of the user input, that is the color associated with the emotion with the highest score will be displayed. However, this approach does not showcase the complex emotions well. Thus, we implemented color blending, which maps the score of each emotion to the opacity of its associated color and blends all the colors altogether, and then the background color will change based on the combination of the emotion of the user input.</p>
+
+									<div class="box alt">
+										<div class="row gtr-uniform">
+											<div class="col-12"><span class="image fit"><img src="../images/chroma-flow_5.png" alt="" /></span></div>
+										</div>
+									</div>
+
+									<p>The color mapping is then integrated with the WebSocket so that it can be used by more people 
+										on different browsers or devices. 
+										The user input will be sent to the server when it’s submitted, and the query function will then
+										be called to get the emotional analysis result from the model. After that, the message and result 
+										will be sent to other available clients. When the client receives the data from the server, it will 
+										do the color mapping and display the color associated with the message
+									</p>
+									
+									<div class="box alt">
+										<div class="row gtr-uniform">
+											<div class="col-6"><span class="image fit"><img src="../images/chroma-flow_6.jpg" alt="" /></span></div>
+											<div class="col-6"><span class="image fit"><img src="../images/chroma-flow_7.jpg" alt="" /></span></div>
+										</div>
+									</div>
+
+									<p>Code available on <a href="https://github.com/cyeeee/affective-socket">GitHub.</a></p>
+
+									<p><b>Tools: </b>JavaScript, API, WebSocket</p>
+
+									<p><b>In collaboration with: </b>Riva Wang, Seba Alabdullatif</p>
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<ul class="contact">
+								<a href="https://www.linkedin.com/in/chenyiw/" class="icon brands fa-linkedin-in"></a>&emsp;
+								<a href="https://github.com/cyeeee" class="icon brands fa-github"></a>&emsp;
+								<a href="https://www.instagram.com/yeeee_cyi/" class="icon brands fa-instagram"></a>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; 2024 <a href="../index.html">Chenyi Wang</a></li>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>

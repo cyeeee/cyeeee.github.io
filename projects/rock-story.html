@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>The Story of the Rock</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="icon" href="../images/logo.png">
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="../index.html">Chenyi Wang</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="../index.html">Home</a></li>
+								<li><a href="../projects.html">Projects</a></li>
+								<li><a href="../about.html">About</a></li>
+							</ul>
+							<a href="https://www.linkedin.com/in/chenyiw/" class="icon brands fa-linkedin-in"></a>&emsp;
+							<a href="https://github.com/cyeeee" class="icon brands fa-github"></a>&emsp;
+							<a href="https://www.instagram.com/yeeee_cyi/" class="icon brands fa-instagram"></a>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>The Story of the Rock</h2>
+								<p>Affective Interactive Video<br><i>2024.03 - 2024.04</i></p>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<div class="box alt">
+										<div class="row gtr-uniform">
+											<div class="col-12"><span class="video fit">
+												<video autoplay>
+													<source src="../videos/rock-story_1.mp4" type="video/mp4">
+												</video>
+											</span></div>
+										</div>
+									</div>
+
+									<p>The concept of this work is to create an individualized experience based on facial expression detection technology, which was inspired by the emotion is an abstract thing around us and we constantly need to interpret it from others, especially through facial expressions, to make appropriate reactions and decisions during socialization.</p>
+									<p>This demo is an interactive story about a rock that has multiple storylines and endings, and the audience will have different experiences based on their emotion during the time of watching, which will be the facial expression detected in this implementation.</p>
+									
+									<div class="box alt">
+										<div class="row gtr-uniform">
+											<div class="col-12"><span class="image fit"><img src="../images/rock-story_1.png" alt="" /></span></div>
+										</div>
+									</div>
+
+									<p>In our conception, the rock, which represents stillness and grounding, embodies numbness and is void of any emotion. However, it transforms when it encounters different events triggered by the facial expressions of the participants. The essence of the storyline of the rock's evolving nature is to inspire hope and curiosity in people's lives. Regardless of one's current emotions, it reminds people that there is always a positive future ahead.</p>
+									
+									<div class="box alt">
+										<div class="row gtr-uniform">
+											<div class="col-4"><span class="image fit"><img src="../images/rock-story_2.png" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="../images/rock-story_3.png" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="../images/rock-story_0.png" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="../images/rock-story_4.png" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="../images/rock-story_5.png" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="../images/rock-story_6.png" alt="" /></span></div>
+										</div>
+									</div>
+
+									<p>
+										We utilized face-api and p5.js to implement our demo. The face-api is used to detect the 
+										audience’s facial expression throughout the time when the scene is playing. During the time of 
+										a scene is playing, the facial expression of the audience will be constantly detected and recorded. 
+										At the end of the scene, the most appeared facial expression will be computed by finding the
+										corresponding expression of highest value of the detected confidence. Thus, when each scene 
+										ended, the computed result facial expression of the audience of that scene will be used to 
+										determine the next scene being played. At the moment of scene switch, a message will also be 
+										printed to the console with the information of expression detected to inform the audience of 
+										their control of the storyline.
+									</p>
+
+									<p><a href="https://cyeeee.github.io/affective-interactive-video/">Live Demo</a></p>
+
+									<p>Code available on <a href="https://github.com/cyeeee/affective-interactive-video">GitHub.</a></p>
+
+									<p><b>Tools: </b>p5.js, face-api</p>
+
+									<p><b>In collaboration with: </b>Riva Wang, Seba Alabdullatif</p>
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<ul class="contact">
+								<a href="https://www.linkedin.com/in/chenyiw/" class="icon brands fa-linkedin-in"></a>&emsp;
+								<a href="https://github.com/cyeeee" class="icon brands fa-github"></a>&emsp;
+								<a href="https://www.instagram.com/yeeee_cyi/" class="icon brands fa-instagram"></a>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; 2024 <a href="../index.html">Chenyi Wang</a></li>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
