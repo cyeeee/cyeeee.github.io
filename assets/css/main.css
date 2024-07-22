@@ -3339,7 +3339,7 @@ input, select, textarea {
 			-ms-transition: opacity 0.35s ease, -ms-transform 0.35s ease;
 			transition: opacity 0.35s ease, transform 0.35s ease;
 			-webkit-overflow-scrolling: touch;
-			background: #54555f;
+			background: #2e2e31;
 			border-radius: 5px;
 			display: block;
 			max-width: 100%;
@@ -3395,7 +3395,7 @@ input, select, textarea {
 				}
 
 					#menu .links li a:hover {
-						background: #5e5f69;
+						background: #3d3d41;
 					}
 
 		@media screen and (max-width: 736px) {
