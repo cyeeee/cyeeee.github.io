@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Interactive Music Visualizer</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="icon" href="../images/logo.png">
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="../index.html">Chenyi Wang</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="../index.html">Home</a></li>
+								<li><a href="../projects.html">Projects</a></li>
+								<li><a href="../about.html">About</a></li>
+							</ul>
+							<a href="https://www.linkedin.com/in/chenyiw/" class="icon brands fa-linkedin-in"></a>&emsp;
+							<a href="https://github.com/cyeeee" class="icon brands fa-github"></a>&emsp;
+							<a href="https://www.instagram.com/yeeee_cyi/" class="icon brands fa-instagram"></a>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Interactive Music Visualizer</h2>
+								<p>Creative Coding + Sound Production<br><i>2024.02</i></p>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+									<div class="box alt">
+										<div class="row gtr-uniform">
+											<div class="col-12"><span class="image fit"><img src="../images/music-visual_0.png" alt="" /></span></div>
+										</div>
+									</div>
+
+									<p>This project is an interactive music visualizer built in Processing, where the sound piece is produced using Ableton.</p>
+
+									<p>I incorporated the environmental sounds while making the sound. I love the sea, and I just happened to have a recording of the sea waves, which I recorded during the winter break in my hometown. I thought this recording would be a perfect sample for the main thread of my sound piece. I then experimented with Ableton and added some drums and samples that I found would be compatible. I also played with the effects and added some delay effects to one of the tracks.</p>
+									
+									<div class="box alt">
+										<div class="row gtr-uniform">
+											<div class="col-6"><span class="image fit"><img src="../images/music-visual_1.png" alt="" /></span></div>
+											<div class="col-6"><span class="image fit"><img src="../images/music-visual_2.png" alt="" /></span></div>
+										</div>
+									</div>
+
+									<p>The final result of my sound experiment:</p>
+									<audio controls>
+										<source src="../videos/music-visual_sound.mp3" type="audio/mpeg">
+									</audio>
+									  
+									<p><br></p>
+									<p>
+										<span class="image left"><img src="../images/music-visual.jpg" alt="" /></span>
+										The visual part was inspired by the overhead view of the sea waves and was implemented using the Perlin noise and floating particle effects.<br><br>
+										The particles will always be moving, but the noise seed of the Perlin noise will change when the amplitude of the sound file passes a certain threshold, which will result in a change in the direction of the movement of the particles. I also made the size of the particles dependent on the amplitude, so the higher the amplitude, the bigger the particle size, and vice versa. <br><br>
+										There are also some interactivities implemented. I added low-pass and high-pass filters, delay and reverb effects, and some corresponding controls to make it more fun.
+									</p>
+									
+									<p>Summary of the instruction for the interactivity in my work:
+										<ul><ul>
+											<li>“L” for low pass filter, moving the mouse horizontally to adjust the cut off frequency.
+											<li>“H” for high pass filter, moving the mouse horizontally to adjust the cut off frequency.
+											<li>“D” for delay effect, using the up and down arrow keys to adjust the delay time.
+											<li>“R” for reverb effect, using the up and down arrow keys to adjust the room size.
+											<li>Mouse Click to reset effects.
+											<li>Moving the mouse around can change the background color.
+											<li><i>Note: only one effect can be added at a time.</i>
+										</ul></ul>
+									</p>
+
+									<p><a href="https://drive.google.com/file/d/1PFyAbuc0761zdgRN_kYk8CMZT2Jfp3jR/view?usp=sharing">Demo Video</a></p>
+
+									<p><b>Tools: </b>Processing, Ableton</p>
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<ul class="contact">
+								<a href="https://www.linkedin.com/in/chenyiw/" class="icon brands fa-linkedin-in"></a>&emsp;
+								<a href="https://github.com/cyeeee" class="icon brands fa-github"></a>&emsp;
+								<a href="https://www.instagram.com/yeeee_cyi/" class="icon brands fa-instagram"></a>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; 2024 <a href="../index.html">Chenyi Wang</a></li>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
