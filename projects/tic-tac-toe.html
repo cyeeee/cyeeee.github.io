@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Tic-Tac-Toe</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="icon" href="../images/logo.png">
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="../index.html">Chenyi Wang</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="../index.html">Home</a></li>
+								<li><a href="../projects.html">Projects</a></li>
+								<li><a href="../about.html">About</a></li>
+							</ul>
+							<a href="https://www.linkedin.com/in/chenyiw/" class="icon brands fa-linkedin-in"></a>&emsp;
+							<a href="https://github.com/cyeeee" class="icon brands fa-github"></a>&emsp;
+							<a href="https://www.instagram.com/yeeee_cyi/" class="icon brands fa-instagram"></a>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Tic-Tac-Toe</h2>
+								<p>Creative Coding + Physical Computing<br><i>2023.11</i></p>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<div class="box alt">
+										<div class="row gtr-uniform">
+											<div class="col-12"><span class="video fit">
+												<video controls>
+													<source src="../videos/tic_1.mp4" type="video/mp4">
+												</video>
+											</span></div>
+										</div>
+									</div>
+
+									<p>This project is a simple Tic-Tac-Toe game with a physical interface.</p>
+									<p>The game controls are physical, built using buttons and a potentiometer, and connected using Arduino. The game board is implemented digitally using p5.js. Two parts are connected using serial.</p>
+									<p>The potentiometer is used for selecting the box on the board, and the buttons are for two player to assign the box with different shapes. 
+										When the box is selected, it will be highlighted and slowly flash. The turn cue will show at the top of the board all the time during the game. The game can be reset by pressing [R] on the keyboard.</p>
+
+									<div class="box alt">
+										<div class="row gtr-uniform">
+											<div class="col-4"><span class="image fit"><img src="../images/tic_2.png" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="../images/tic_3.png" alt="" /></span></div>
+										</div>
+									</div>
+									
+									<p>The value of the potentiometer is divided into 9 intervals in the Arduino code to assign to 9 boxes on the board respectively. Different numbers will be sent through the serial when the potentiometer has a different value to differentiate which box on the board is selected.</p>
+									<p>Each player has a separate button and can only be used during the turn. Boxes that are already assigned cannot be assigned again, and only the unassigned boxes can be selected. After the board is full, the turn cue will disappear, and the players can restart the game using the [R] key on the keyboard. Players can also reset the game anytime during the game. </p>
+
+									<p>I didn’t implement any computation for the result of the game so the players need to tell it by themselves. If I have more time to work on this project, I might add the result computing feature to make this game more intelligent.</p>
+
+									<p>The <a href="https://github.com/cyeeee/creative-coding/blob/main/PhysicalInterface/PhysicalInterface/PhysicalInterface.ino">Arduino code</a> and <a href="https://github.com/cyeeee/creative-coding/blob/main/PhysicalInterface/sketch.js">p5 code</a> are available on my Github.</p>
+									
+									<p><b>Tools: </b>Arduino, p5.js</p>
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<ul class="contact">
+								<a href="https://www.linkedin.com/in/chenyiw/" class="icon brands fa-linkedin-in"></a>&emsp;
+								<a href="https://github.com/cyeeee" class="icon brands fa-github"></a>&emsp;
+								<a href="https://www.instagram.com/yeeee_cyi/" class="icon brands fa-instagram"></a>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; 2024 <a href="../index.html">Chenyi Wang</a></li>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
