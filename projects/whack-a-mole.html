@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Whack-A-Mole</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="icon" href="../images/logo.png">
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="../index.html">Chenyi Wang</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="../index.html">Home</a></li>
+								<li><a href="../projects.html">Projects</a></li>
+								<li><a href="../about.html">About</a></li>
+							</ul>
+							<a href="https://www.linkedin.com/in/chenyiw/" class="icon brands fa-linkedin-in"></a>&emsp;
+							<a href="https://github.com/cyeeee" class="icon brands fa-github"></a>&emsp;
+							<a href="https://www.instagram.com/yeeee_cyi/" class="icon brands fa-instagram"></a>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Whack-A-Mole</h2>
+								<p>Web 2D Game<br><i>2023.10</i></p>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+									<div class="box alt">
+										<div class="row gtr-uniform">
+											<div class="col-12"><span class="image fit"><img src="../images/mole_0.png" alt="" /></span></div>
+										</div>
+									</div>
+
+									<p>My version of “Whack-a-mole” is simple because there are only four holes, and the player can control the hammer using the WASD keys. This specific layout and control were inspired by the mini-game of “Whack-a-Cody” in the game “It Takes Two”.</p>
+
+									<p>The game has three interfaces: a home page, a game page, and a game-over page.</p>
+
+									<div class="box alt">
+										<div class="row gtr-uniform">
+											<div class="col-3"><span class="image fit"><img src="../images/mole_1.png" alt="" /></span></div>
+											<div class="col-3"><span class="image fit"><img src="../images/mole_4.png" alt="" /></span></div>
+											<div class="col-3"><span class="image fit"><img src="../images/mole_3.png" alt="" /></span></div>
+											<div class="col-3"><span class="image fit"><img src="../images/mole_2.png" alt="" /></span></div>
+										</div>
+									</div>
+
+									<p>The main game has two modes: single-player mode and two-player mode, and the user can select the mode on the home page. The implementation of the buttons used the p5.clickable library. There is also a simple effect for hovering over the buttons.</p>
+
+									<p>In single-player mode, the user can use the WASD keys to move the hammer to the corresponding holes. The moles will appear automatically and randomly. Every success “whack” will give the player one point. There is a countdown timer and time bar at the top of the screen to show users how much time is left. The implementation of the timer used the p5.timer library. When the remaining time is less than 10 seconds, the color of the time bar will change to red. The game has a time limit of 60 seconds, and will automatically switch to the game-over page after the time is up.</p>
+
+									<p>The two-player mode is just for fun and is incomplete. The basic gameplay is the same as the single-player, but in addition, the appearance of the moles is manual instead of automatic. In this mode, the user can use the arrow keys to control the moles at the corresponding spot. This control was originally the testing I used when I first implemented the appearance of the moles, but I thought it would be fun to keep it as an additional gameplay.</p>
+									
+									<p>In the game-over page, the user can choose to either play again (with the same mode selected before) by clicking the “replay” button or go back to the home page by clicking the “home” button. The implementation of the buttons is the same as the buttons on the home page. The overall interface transition is implemented by using the finite state machine.</p>
+
+									<h3><a href="https://cyeeee.github.io/creative-coding/Midterm/">Live Demo</a></h3>
+									<div class="box alt">
+										<embed src="https://cyeeee.github.io/creative-coding/Midterm/" style="width: 600px; height: 600px;">
+									</div>
+
+									<p>Code available on <a href="https://github.com/cyeeee/creative-coding/tree/main/Midterm">GitHub.</a></p>
+
+									<p><br><b>Tools: </b>p5.js</p>
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<ul class="contact">
+								<a href="https://www.linkedin.com/in/chenyiw/" class="icon brands fa-linkedin-in"></a>&emsp;
+								<a href="https://github.com/cyeeee" class="icon brands fa-github"></a>&emsp;
+								<a href="https://www.instagram.com/yeeee_cyi/" class="icon brands fa-instagram"></a>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; 2024 <a href="../index.html">Chenyi Wang</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
