@@ -59,11 +59,70 @@
 										<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1078575983?h=c723ffedb1&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Whispertrace"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 									</div>
 
-									<p>My Project is an adventure puzzle game designed to provoke reflection and awareness of people's infinite imagination and creativity while highlighting the limitations of GenAI.</p>
-									<p>The game will provide the player with a situational puzzle, and the player will follow the clues to find possible solutions. Depending on the player's choices, the solutions can be varied.</p> 
-									<p>The main inspiration for my project is the “black box” effect in modern technology, especially AI, which leads to user overwhelm and mistrust. The design of my work is inspired by the decision tree and pruning algorithm in AI, which takes a series of decisions to reach an optimal result.</p>
-									<p>My work gamifies this process, incorporating puzzles to allow the player to experience it while reflecting on many other possibilities in the decision-making process.</p>
+									<p><b><i>Whispertrace</i></b> is an adventure puzzle game designed to provoke reflection and awareness of people's infinite imagination and creativity while highlighting the limitations of GenAI.
+										The game will provide the player with a situational puzzle, and the player will follow the clues to find possible solutions. Depending on the player's choices, the solutions can be varied.</p> 
+									<p>The main inspiration for this project is the “black box” effect in modern technology, especially AI, which leads to user overwhelm and mistrust. The design of this work is inspired by the decision tree and pruning algorithm in AI, which takes a series of decisions to reach an optimal result.
+										This work gamifies this process, incorporating puzzles to allow the player to experience it while reflecting on many other possibilities in the decision-making process.</p><br>
 									
+									<h3>Concept</h3>
+									<p><span class="image left"><img src="../images/whispertrace_5.png" alt="" /></span>The “black box” is a system that can be viewed in terms of its inputs and outputs without any knowledge of its internal workings.
+										With the advancement of Artificial Intelligence (AI) technology, the black box model is being increasingly used in various industries, which exposes users to more uncertainty in their daily use and even on a social level. When using a large language model chatbot, such as ChatGPT, to solve a problem, users often get wrong answers due to a variety of reasons, including the ambiguity of the prompts or the differences in the way the model thinks, but the reasons will not be revealed to the user. For example, if asking ChatGPT, “<i>How many r's does strawberry have?</i>”, it will firstly answer with “<i>The word strawberry has 2 r's.</i>” due to its tokenizer, which is obviously a mistake that should not be made in human cognition. </p>
+									<p>The core themes of this project include:
+										<li>AI is a tool, not the solution.</li>
+										<li>AI is just a guide; it can’t be the subject of thought.</li>
+										<li>Human creativity is limitless and more outstanding than AI.</li>
+										<li>There is only one fact, but there can be many truths.</li>
+									</p>
+
+									<p>This project expresses the core theme in a circuitous way, as it shifts the spotlight to human cognition itself instead of the AI, while using some metaphors to convey the message implicitly.</p><br>
+
+
+									<h3>Design</h3>
+									<p><span class="image right"><img src="../images/whispertrace_6.png" alt="" /></span>The key design idea of this project focused on the "<i>unknown</i>" nature of the "black box", and utilized the properties of the decision tree algorithm in machine learning to build a decision-making experience that invites the user to deeply engage in the pruning process of AI. 
+										Rather than being provided with the optimal output directly, the user can go through multiple steps of choices to explore one of the possibilities among multiple avenues towards the final solution, and has the opportunity to observe all of the other parallel outcomes that were not chosen at the end.
+										This approach can provoke users to reflect on the overall performance of AI decision-making as well as the possibilities of the unknown. </p>
+									<p>In order to highlight the main messages of limitations of AI, and appropriate human-AI collaboration (i.e., AI is a tool, not a solution), that are intended to be conveyed, this project has set up a specific application context by leveraging the Situation Puzzle game. 
+										It is also known as the lateral thinking puzzle, which is a game played with at least two people, and begins with a sentence describing a scene that is unusual or intriguing. 
+										The person describing the scene knows the answer, and the other player(s) attempt to find that out by asking only yes-or-no questions. </p>
+									<p>For better game experience and engagement, this project focused on one specific pre-generated puzzle and then visualize the entire process of solving it, including the use of AI assistance and human creative thinking.
+										The whole process of solving puzzles will be synthesized, restructured, and eventually visualized, and then made into a gamified experience so that users can get a better sense of storytelling as they explore the journey. </p>
+									
+									<p><b>Puzzle in the game:</b></p>
+									<blockquote>
+										I woke up in the middle of the night, a strange noise coming from the forest around my cabin. It was a hoot, but it sounded different, almost… agonized.<br>
+										I grabbed a flashlight and stepped outside. There, lying on the ground, was a single white feather, and unlike any owl’s feather I had ever seen.<br>
+										I bent down to pick it up when I heard the hoot again. But this time, it was far.<br>
+										What did I just find?
+									</blockquote>
+
+									<p><span class="image left"><img src="../images/whispertrace_7.png" alt="" /></span>The puzzle is then further broken down and brainstormed by analyzing each single keyword in the puzzle to expand as many possibilities/meanings as possible for later narratives.
+										Then I utilized AI to solve the puzzle to generate more potential solutions, and also invited my friends to brainstorm and think out of the box to come up with more creative solutions. All the ideas are synthesized after, and I selected 10 of the most interesting solutions that I decided to ultimately present in my work. 
+										These 10 solutions are then further unpacked and brainstormed on the clues and joints for each solution to form a complete, well-structured story for the game.
+										All of the identified clues and their interconnections were then visualized into a path structure map for final presentation to the player in the game.
+										The forest in the puzzle will be visualized in the bird’s-eye view, and the player will be set to start from the middle of a dark forest. The path structure is purposely designed to be complex, and the paths are intertwined with each other to visualize the complexities of thinking during the puzzle-solving process. </p>
+
+									<div class="box alt">
+										<div class="row gtr-uniform">
+											<div class="col-6"><span class="image fit"><img src="../images/whispertrace_8.png" alt="" /></span></div>
+											<div class="col-6"><span class="image fit"><img src="../images/whispertrace_9.png" alt="" /></span></div>
+										</div>
+									</div>
+									<br>
+
+									<h3>Development</h3>
+									<p><span class="image right"><img src="../images/whispertrace_10.png" alt="" /></span>Since the storyline I designed had 10 different endings and 26 different clues in between, each of which contained different information, in order to streamline the development process, I first designed the data structures and data flow so that I could program the rest of the logic more easily. 
+										In terms of the development tool, I utilized the tool that I am most familiar with, Unreal Engine. I choose to use a game engine because it has better functionalities for UI development to help me implement with better visuals and interactivity more efficiently. On top of that, my current design requires a heavy amount of programming to implement the logic and involves multiple data tables, so using Unreal Engine can save me the time of having to learn a new tool from scratch, and the data table file format that come with Unreal Engine can be very helpful in streamlining the programming process as I don't need to import and access data tables separately.
+										With the well-organized path topology structure in the clue data table, the logical flow of clue progression is simplified, and I will be able to draw all explored paths accurately on the map at the end of the game by accessing the data populated during the process.</p>
+
+									<div class="box alt">
+										<div class="row gtr-uniform">
+											<div class="col-6"><span class="image fit"><img src="../images/whispertrace_11.png" alt="" /></span></div>
+											<div class="col-6"><span class="image fit"><img src="../images/whispertrace_12.png" alt="" /></span></div>
+										</div>
+									</div>
+									<br>
+
+									<h3>Highlight</h3>
 									<div class="box alt">
 										<div class="row gtr-uniform">
 											<div class="col-6"><span class="image fit"><img src="../images/whispertrace_1.png" alt="" /></span></div>
@@ -73,7 +132,7 @@
 										</div>
 									</div>
 
-									<p><b>Tools: </b>Unreal Engine</p>
+									<p><b>Tools: </b>Unreal Engine 5</p>
 
 								</div>
 							</div>
